@@ -1,3 +1,9 @@
 controllers:
     resource: ../src/Controller/
     type: attribute
+
+client_yaml_prenom:
+    path:       /client/yaml/prenom/{nom}
+    controller: App\Controller\MonPremierController::info
+    requirements:
+        nom: '[a-zA-Z-]*'

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="e_1">
+                <source>One case can't be blank.</source>
+                <target>One case can't be blank.</target>
+            </trans-unit>
+            <trans-unit id="e_2">
+                <source>You haven't write same password.</source>
+                <target>You haven't write same password.</target>
+            </trans-unit>
+            <trans-unit id="e_3">
+                <source>Some characters cannot be used.</source>
+                <target>Some characters cannot be used.</target>
+            </trans-unit>
+            <trans-unit id="e_4">
+                <source>You haven't correcty enter your email.</source>
+                <target>You haven't correcty enter your email.</target>
+            </trans-unit>
+
+            <trans-unit id="c_1">
+                <source>The information is good.</source>
+                <target>The information is good.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

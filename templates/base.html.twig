@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Acceuil </title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+        <div class="pure-menu pure-menu-horizontal">
+            <ul class="pure-menu-list">
+                {% block javascripts %}{% endblock %}
+                {# Acceuil #}
+                <li class="pure-menu-item pure-menu-selected">
+                    <a href="/" class="pure-menu-link">Acceuil</a>
+                </li>
+
+                {# TP 1 #}
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="/" id="menuLink1" class="pure-menu-link">TP 1</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item">
+                            <a href="/client/php/prenom/nathan-with-php" class="pure-menu-link">Partie PHP</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="/client/yaml/prenom/nathan-with-yaml" class="pure-menu-link">Partie Yaml</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="/client/annotation/prenom/nathan-with-annotation" class="pure-menu-link">Partie Annotation</a>
+                        </li>
+                    </ul>
+                </li>
+
+                {# TP 2 #}
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="/" id="menuLink1" class="pure-menu-link">TP 2</a>
+                    <ul class="pure-menu-children">
+                        {% block Img %}
+                            {{render(controller("App\\Controller\\ImageController::afficher"))}} 
+                        {% endblock %}
+                    </ul>
+                </li>
+
+                {# TP 3 #}
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="/" id="menuLink1" class="pure-menu-link">TP 3</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item">
+                            <a href="/" class="pure-menu-link">Access à la page</a>
+                        </li>
+                    </ul>
+                </li>
+
+                
+                {# TP 4 #}
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="/" id="menuLink1" class="pure-menu-link">TP 4</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item">
+                            <a href="/formulaire/inscription" class="pure-menu-link">Inscription</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="/formulaire/authentification" class="pure-menu-link">Authentification</a>
+                        </li>
+                    </ul>
+                </li>
+
+                {# TP 5 #}
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="/" id="menuLink1" class="pure-menu-link">TP 5</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item">
+                            <a href="/register" class="pure-menu-link"> Register </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="/login" class="pure-menu-link"> Login </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        {% block body %}
+        {% endblock %}
+
+    </body>
+</html>

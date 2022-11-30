@@ -1,0 +1,10 @@
+# Message Erreur :
+One case can't be blank: L'un des champs ne peut pas être vide
+You haven't write same password: Vous n'avez pas écrire le même mot de passe
+Some characters cannot be used: Certain caracteres ne peuvent pas être utilisé
+You haven't correcty enter your email: Tu n'as pas correctement entre ton email
+Email or Password isn't correct: Email ou Mot de passe est incorrect
+
+# Message Correct :
+The information is good: Les informations sont bonnes
+Authentification Success: Authentification avec réussite
